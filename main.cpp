@@ -60,6 +60,7 @@ ISoundEngine *musica = createIrrKlangDevice();
 ISoundEngine *m_carrusel = createIrrKlangDevice();
 ISoundEngine *engine_delfin = createIrrKlangDevice();
 ISoundEngine *engine_con = createIrrKlangDevice();
+ISoundEngine *engine_calab = createIrrKlangDevice();
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Window mainWindow;
@@ -421,7 +422,26 @@ int musica3D(glm::vec3 position, ISound *musica_3d)
 		musica_3d->setIsPaused(false); // unpause the sound
 	}
 }
+int risa_calabaza(glm::vec3 position, ISound *musica_3d)
+{
+	irrklang::vec3df position_3d((int)position.x, (int)position.y, (int)position.z);		   // position of the listener
+	irrklang::vec3df lookDirection(10, 0, 10); // the direction the listener looks into
+	irrklang::vec3df velPerSecond(0, 0, 0);	// only relevant for doppler effects
+	irrklang::vec3df upVector(0, 1, 0);		   // where 'up' is in your 3D scene
 
+	engine_calab->setListenerPosition(position_3d, lookDirection, velPerSecond, upVector);
+
+	if (!engine_calab)
+		return 0;
+
+	if ((position.x < 38.0f && position.x > 22.0f) && (position.z > -8.0f &&
+		position.z < 8.0f)) {
+		musica_3d->setIsPaused(false); // unpause the sound
+	}
+	else {
+		musica_3d->setIsPaused(false); // unpause the sound
+	}
+}
 
 // ---------------------------------------------------------------------------------------------------------------------
 // ---------------------------------------------------------------------------------------------------------------------
@@ -1312,14 +1332,18 @@ int main()
 {
 	//%%%%%%%%%%% sonido %%%%%%%%%%%%%%%%%%%%%
 	vec3df position_3d(70, 0, 15); 
-	vec3df position_delfin(0, 0, 0);
+	vec3df position_delfin(84.0f, 11.0f, -42.0f);
 	vec3df position_Con(20.0f, -2.0f, 30.0f);
+	vec3df position_Calab_1(-25.0f, 0.5f, -24.0f);
 	ISound *musica_3d = m_carrusel->play3D("musica/01_carrusel_c.ogg", position_3d, true, true);
 	musica_3d->setMinDistance(10); 
 	ISound *musica_delfin = engine_delfin->play3D("musica/01_delfin.ogg", position_delfin, true, true);
 	musica_delfin->setMinDistance(10);
 	ISound *musica_win = engine_con->play3D("musica/01_win.ogg", position_Con, true, true);
 	musica_win->setMinDistance(10);
+
+	ISound *musica_calab_1 = engine_calab->play3D("musica/01_risa.ogg", position_Calab_1, true, true);
+	musica_calab_1->setMinDistance(5);
 	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	float cont_globo = 0;
 	mainWindow = Window(1566, 968 ); // 1280, 1024 or 1024, 768, ultima: 1366, 768
@@ -2353,7 +2377,7 @@ int main()
 
 
 		model = glm::mat4(1.0);
-		model = glm::translate(model, glm::vec3(55.0f, -2.0f, 68.0f)); // 26, -2, 25
+		model = glm::translate(model, glm::vec3(75.0f, -2.0f, 58.0f)); // 26, -2, 25
 		model = glm::rotate(model, -90 * toRadians, glm::vec3(0.0f, 1.0f, 0.0f));
 		model = glm::scale(model, glm::vec3(0.08f, 0.08f, 0.08f));
 		//model = glm::rotate(model, -90 * toRadians, glm::vec3(1.0f, 0.0f, 0.0f));
@@ -2875,6 +2899,8 @@ int main()
 		glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
 		calabaza.RenderModel();
 
+		risa_calabaza(camera.getCameraPosition(), musica_calab_1);
+
 		model = glm::translate(modeltempCasa, glm::vec3(-11.0f, 0.0f, 18.0f));
 		model = glm::scale(model, glm::vec3(2.5f, 2.5f, 2.5f));
 		glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
@@ -3077,7 +3103,7 @@ int main()
 	m_carrusel->drop(); // delete engine
 	musica_delfin->drop(); 
 	musica_win->drop();
-
+	musica_calab_1->drop();
 	return 0;
 }
 
@@ -3261,6 +3287,6 @@ void inputKeyframes(bool* keys)
 	if (keys[GLFW_KEY_N] && regresa == 0) { pos13 = 1; }
 
 	//%%%%%%%%%%%%% musica %%%%%%%%%%%%%
-	if (keys[GLFW_KEY_G]) { musica->setAllSoundsPaused(true); }
+	if (keys[GLFW_KEY_Q]) { musica->setAllSoundsPaused(true); }
 	if (keys[GLFW_KEY_H]) { musica->setAllSoundsPaused(false); }
 }
