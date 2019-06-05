@@ -1,0 +1,88 @@
+# Blender MTL File: 'gradas.blend'
+# Material Count: 8
+
+newmtl None
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd C:\Users\Pamela\source\repos\02_PROYECTO_FINAL_COMPU-GRS\Textures\s_01_color.tga
+
+newmtl None_blanco.tga
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Pamela\source\repos\02_PROYECTO_FINAL_COMPU-GRS\Textures\blanco.tga
+
+newmtl None_blanco.tga.002
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Pamela\source\repos\02_PROYECTO_FINAL_COMPU-GRS\Textures\blanco.tga
+
+newmtl None_s_01_color.tga
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Pamela\source\repos\02_PROYECTO_FINAL_COMPU-GRS\Textures\s_01_color.tga
+
+newmtl None_s_01_color.tga.004
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Pamela\source\repos\02_PROYECTO_FINAL_COMPU-GRS\Textures\s_01_color.tga
+
+newmtl stediam_Color
+Ns 94.117647
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Pamela\source\repos\02_PROYECTO_FINAL_COMPU-GRS\Textures\p_04_azul.tga
+
+newmtl stediam_Color_p_11_morado.tga
+Ns 94.117647
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Pamela\source\repos\02_PROYECTO_FINAL_COMPU-GRS\Textures\p_11_morado.tga
+
+newmtl stediam_Color_s_01_color.tga
+Ns 94.117647
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Pamela\source\repos\02_PROYECTO_FINAL_COMPU-GRS\Textures\s_01_color.tga

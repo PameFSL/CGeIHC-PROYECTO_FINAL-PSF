@@ -1,0 +1,45 @@
+# Blender MTL File: 's_01_puertaP.blend'
+# Material Count: 4
+
+newmtl Pillars
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Pamela\source\repos\PROYECTO_AMBOS - copia\Textures\p_03_amarillo.tga
+
+newmtl Pillars_p_04_azul.tga
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Pamela\source\repos\PROYECTO_AMBOS - copia\Textures\p_04_azul.tga
+
+newmtl Side_Panels
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Pamela\source\repos\PROYECTO_AMBOS - copia\Textures\blanco.tga
+
+newmtl wood_boards_light
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2

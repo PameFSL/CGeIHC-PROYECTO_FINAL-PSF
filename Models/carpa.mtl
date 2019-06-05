@@ -1,0 +1,124 @@
+#  ==========================================================================
+#  Wavefront Material file
+#  Exported by Red-i Productions' "Riptide Pro"
+#  (a commercial plugin for Cinema 4D PC & Mac, R9.6 or later)
+#  
+#  Red-i Productions
+#  http://skinprops.com
+#  
+#  ==========================================================================
+
+newmtl Concrete_Scored_Jointless
+Kd 0.800000 0.800000 0.800000
+illum 1
+map_Kd Concrete_Scored_Jointless.jpg
+
+newmtl material
+Kd 1.000000 1.000000 1.000000
+illum 1
+
+newmtl Color_E02
+Kd 1.000000 1.000000 0.196078
+illum 1
+
+newmtl Color_000
+Kd 1.000000 1.000000 1.000000
+illum 1
+
+newmtl Color_I11
+Kd 0.000000 0.000000 0.600000
+illum 1
+
+newmtl Fencing_Wood_Old
+Kd 0.800000 0.800000 0.800000
+illum 1
+map_Kd Fencing_Wood_Old.jpg
+
+newmtl Fencing_Metal_Straight
+Kd 0.800000 0.800000 0.800000
+Tf 1.000000 1.000000 1.000000
+illum 1
+d 0.000000
+Ni 1.000000
+map_Kd Fencing_Metal_Straight.png
+
+newmtl Color_I16
+Kd 0.000000 0.000000 0.400000
+illum 1
+
+newmtl Fencing_Diamond_Mesh
+Kd 0.800000 0.800000 0.800000
+Tf 1.000000 1.000000 1.000000
+illum 1
+d 0.000000
+Ni 1.000000
+map_Kd Fencing_Diamond_Mesh.png
+
+newmtl Groundcover_Sand_Raked
+Kd 0.800000 0.800000 0.800000
+illum 1
+map_Kd Groundcover_Sand_Raked.jpg
+
+newmtl Color_F16
+Kd 0.200000 0.400000 0.000000
+illum 1
+
+newmtl Color_H06
+Kd 0.000000 0.800000 0.800000
+illum 1
+
+newmtl Color_E16
+Kd 0.400000 0.400000 0.000000
+illum 1
+
+newmtl Color_009
+Kd 0.000000 0.000000 0.000000
+illum 1
+
+newmtl Color_I02
+Kd 0.196078 0.196078 1.000000
+illum 1
+
+newmtl Wood_Floor_Parquet
+Kd 0.800000 0.800000 0.800000
+illum 1
+map_Kd Wood_Floor_Parquet.jpg
+
+newmtl Color_I23
+Kd 0.078431 0.078431 0.200000
+illum 1
+
+newmtl Color_L06
+Kd 0.800000 0.000000 0.392157
+illum 1
+
+newmtl Color_008
+Kd 0.117647 0.117647 0.117647
+illum 1
+
+newmtl Color_A01
+Kd 1.000000 0.000000 0.000000
+illum 1
+
+newmtl Tile_Navy
+Kd 0.800000 0.800000 0.800000
+illum 1
+map_Kd Tile_Navy.jpg
+
+newmtl Asphalt_New
+Kd 0.800000 0.800000 0.800000
+illum 1
+map_Kd Asphalt_New.jpg
+
+newmtl Tile_Mosaic_Multi
+Kd 0.800000 0.800000 0.800000
+Tf 0.060000 0.060000 0.060000
+illum 1
+d 0.000000
+Ni 1.000000
+map_Kd Tile_Mosaic_Multi.jpg
+
+newmtl Wood_Cherry_Original
+Kd 0.800000 0.800000 0.800000
+illum 1
+map_Kd Wood_Cherry_Original.jpg

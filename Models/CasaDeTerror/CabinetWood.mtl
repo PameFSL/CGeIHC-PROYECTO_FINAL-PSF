@@ -1,0 +1,29 @@
+# Blender MTL File: 'Cabinet Wood.obj'
+# Material Count: 2
+
+newmtl _Cabinet_WoodMAT_Glass_Mat
+Ns 9.803922
+Ka 0.588000 0.588000 0.588000
+Kd 0.588000 0.588000 0.588000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Cabinet Wood\MAT_Glass_Distortion_Bubbly_D.jpg
+map_Ka Cabinet Wood\\MAT_Glass_Distortion_Bubbly_D.jpg
+map_d Cabinet Wood\\MAT_Glass_Distortion_Bubbly_A.jpg
+
+newmtl _Cabinet_WoodOBJ_Table_Plain_Base_Mat
+Ns 9.803922
+Ka 0.588000 0.588000 0.588000
+Kd 0.588000 0.588000 0.588000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Cabinet Wood\OBJ_Table_Plain_Base_D.jpg
+map_Bump Cabinet Wood\\OBJ_Table_Plain_Base_N.jpg
+map_Ka Cabinet Wood\\OBJ_Table_Plain_Base_D.jpg
+map_Ks Cabinet Wood\\OBJ_Table_Plain_Base_S.jpg
